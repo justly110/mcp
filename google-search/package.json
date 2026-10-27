@@ -1,0 +1,36 @@
+{
+  "name": "@justly110/google-search-mcp",
+  "version": "1.0.0",
+  "description": "Google Search MCP Server supporting both stdio and HTTP/SSE transports",
+  "main": "dist/index.js",
+  "bin": {
+    "google-search-mcp": "dist/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc && chmod +x dist/index.js",
+    "start": "node dist/index.js",
+    "start:http": "node dist/http.js",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "google-search",
+    "claude",
+    "cursor"
+  ],
+  "author": "justly110",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.0",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.4",
+    "typescript": "^5.7.3"
+  }
+}

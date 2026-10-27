@@ -4,8 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "google-search-mcp"
-version = "1.0.0"
-description = "Google Search MCP Server installable via uv and uvx"
+version = "1.1.0"
+description = "Google Search MCP Server powered by Gemini API Search Grounding, installable via uv and uvx"
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"
